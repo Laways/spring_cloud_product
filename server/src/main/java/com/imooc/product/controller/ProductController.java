@@ -61,4 +61,9 @@ public class ProductController {
     public Object getOrdersFeign(){
         return orderClient.findAllOrders();
     }
+
+    @GetMapping("/testMsg")
+    public String testMsg(){
+        return "hello get";
+    }
 }
