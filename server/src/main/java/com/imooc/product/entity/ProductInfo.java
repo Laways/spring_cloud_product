@@ -1,63 +1,63 @@
 package com.imooc.product.entity;
 
 public class ProductInfo {
-    private Integer pid;
+    private Integer pId;
 
-    private String pname;
+    private String pName;
 
-    private Integer pstate;
+    private Integer pState;
 
-    private Double pprice;
+    private Double pPrice;
 
-    private Integer pcount;
+    private Integer pCount;
 
-    private Double ptotal;
+    private Double pTotal;
 
-    public Integer getPid() {
-        return pid;
+    public Integer getpId() {
+        return pId;
     }
 
-    public void setPid(Integer pid) {
-        this.pid = pid;
+    public void setpId(Integer pId) {
+        this.pId = pId;
     }
 
-    public String getPname() {
-        return pname;
+    public String getpName() {
+        return pName;
     }
 
-    public void setPname(String pname) {
-        this.pname = pname == null ? null : pname.trim();
+    public void setpName(String pName) {
+        this.pName = pName == null ? null : pName.trim();
     }
 
-    public Integer getPstate() {
-        return pstate;
+    public Integer getpState() {
+        return pState;
     }
 
-    public void setPstate(Integer pstate) {
-        this.pstate = pstate;
+    public void setpState(Integer pState) {
+        this.pState = pState;
     }
 
-    public Double getPprice() {
-        return pprice;
+    public Double getpPrice() {
+        return pPrice;
     }
 
-    public void setPprice(Double pprice) {
-        this.pprice = pprice;
+    public void setpPrice(Double pPrice) {
+        this.pPrice = pPrice;
     }
 
-    public Integer getPcount() {
-        return pcount;
+    public Integer getpCount() {
+        return pCount;
     }
 
-    public void setPcount(Integer pcount) {
-        this.pcount = pcount;
+    public void setpCount(Integer pCount) {
+        this.pCount = pCount;
     }
 
-    public Double getPtotal() {
-        return ptotal;
+    public Double getpTotal() {
+        return pTotal;
     }
 
-    public void setPtotal(Double ptotal) {
-        this.ptotal = ptotal;
+    public void setpTotal(Double pTotal) {
+        this.pTotal = pTotal;
     }
 }

@@ -104,373 +104,373 @@ public class ProductInfoExample {
             criteria.add(new Criterion(condition, value1, value2));
         }
 
-        public Criteria andPidIsNull() {
-            addCriterion("pId is null");
+        public Criteria andPIdIsNull() {
+            addCriterion("p_id is null");
             return (Criteria) this;
         }
 
-        public Criteria andPidIsNotNull() {
-            addCriterion("pId is not null");
+        public Criteria andPIdIsNotNull() {
+            addCriterion("p_id is not null");
             return (Criteria) this;
         }
 
-        public Criteria andPidEqualTo(Integer value) {
-            addCriterion("pId =", value, "pid");
+        public Criteria andPIdEqualTo(Integer value) {
+            addCriterion("p_id =", value, "pId");
             return (Criteria) this;
         }
 
-        public Criteria andPidNotEqualTo(Integer value) {
-            addCriterion("pId <>", value, "pid");
+        public Criteria andPIdNotEqualTo(Integer value) {
+            addCriterion("p_id <>", value, "pId");
             return (Criteria) this;
         }
 
-        public Criteria andPidGreaterThan(Integer value) {
-            addCriterion("pId >", value, "pid");
+        public Criteria andPIdGreaterThan(Integer value) {
+            addCriterion("p_id >", value, "pId");
             return (Criteria) this;
         }
 
-        public Criteria andPidGreaterThanOrEqualTo(Integer value) {
-            addCriterion("pId >=", value, "pid");
+        public Criteria andPIdGreaterThanOrEqualTo(Integer value) {
+            addCriterion("p_id >=", value, "pId");
             return (Criteria) this;
         }
 
-        public Criteria andPidLessThan(Integer value) {
-            addCriterion("pId <", value, "pid");
+        public Criteria andPIdLessThan(Integer value) {
+            addCriterion("p_id <", value, "pId");
             return (Criteria) this;
         }
 
-        public Criteria andPidLessThanOrEqualTo(Integer value) {
-            addCriterion("pId <=", value, "pid");
+        public Criteria andPIdLessThanOrEqualTo(Integer value) {
+            addCriterion("p_id <=", value, "pId");
             return (Criteria) this;
         }
 
-        public Criteria andPidIn(List<Integer> values) {
-            addCriterion("pId in", values, "pid");
+        public Criteria andPIdIn(List<Integer> values) {
+            addCriterion("p_id in", values, "pId");
             return (Criteria) this;
         }
 
-        public Criteria andPidNotIn(List<Integer> values) {
-            addCriterion("pId not in", values, "pid");
+        public Criteria andPIdNotIn(List<Integer> values) {
+            addCriterion("p_id not in", values, "pId");
             return (Criteria) this;
         }
 
-        public Criteria andPidBetween(Integer value1, Integer value2) {
-            addCriterion("pId between", value1, value2, "pid");
+        public Criteria andPIdBetween(Integer value1, Integer value2) {
+            addCriterion("p_id between", value1, value2, "pId");
             return (Criteria) this;
         }
 
-        public Criteria andPidNotBetween(Integer value1, Integer value2) {
-            addCriterion("pId not between", value1, value2, "pid");
+        public Criteria andPIdNotBetween(Integer value1, Integer value2) {
+            addCriterion("p_id not between", value1, value2, "pId");
             return (Criteria) this;
         }
 
-        public Criteria andPnameIsNull() {
-            addCriterion("pName is null");
+        public Criteria andPNameIsNull() {
+            addCriterion("p_name is null");
             return (Criteria) this;
         }
 
-        public Criteria andPnameIsNotNull() {
-            addCriterion("pName is not null");
+        public Criteria andPNameIsNotNull() {
+            addCriterion("p_name is not null");
             return (Criteria) this;
         }
 
-        public Criteria andPnameEqualTo(String value) {
-            addCriterion("pName =", value, "pname");
+        public Criteria andPNameEqualTo(String value) {
+            addCriterion("p_name =", value, "pName");
             return (Criteria) this;
         }
 
-        public Criteria andPnameNotEqualTo(String value) {
-            addCriterion("pName <>", value, "pname");
+        public Criteria andPNameNotEqualTo(String value) {
+            addCriterion("p_name <>", value, "pName");
             return (Criteria) this;
         }
 
-        public Criteria andPnameGreaterThan(String value) {
-            addCriterion("pName >", value, "pname");
+        public Criteria andPNameGreaterThan(String value) {
+            addCriterion("p_name >", value, "pName");
             return (Criteria) this;
         }
 
-        public Criteria andPnameGreaterThanOrEqualTo(String value) {
-            addCriterion("pName >=", value, "pname");
+        public Criteria andPNameGreaterThanOrEqualTo(String value) {
+            addCriterion("p_name >=", value, "pName");
             return (Criteria) this;
         }
 
-        public Criteria andPnameLessThan(String value) {
-            addCriterion("pName <", value, "pname");
+        public Criteria andPNameLessThan(String value) {
+            addCriterion("p_name <", value, "pName");
             return (Criteria) this;
         }
 
-        public Criteria andPnameLessThanOrEqualTo(String value) {
-            addCriterion("pName <=", value, "pname");
+        public Criteria andPNameLessThanOrEqualTo(String value) {
+            addCriterion("p_name <=", value, "pName");
             return (Criteria) this;
         }
 
-        public Criteria andPnameLike(String value) {
-            addCriterion("pName like", value, "pname");
+        public Criteria andPNameLike(String value) {
+            addCriterion("p_name like", value, "pName");
             return (Criteria) this;
         }
 
-        public Criteria andPnameNotLike(String value) {
-            addCriterion("pName not like", value, "pname");
+        public Criteria andPNameNotLike(String value) {
+            addCriterion("p_name not like", value, "pName");
             return (Criteria) this;
         }
 
-        public Criteria andPnameIn(List<String> values) {
-            addCriterion("pName in", values, "pname");
+        public Criteria andPNameIn(List<String> values) {
+            addCriterion("p_name in", values, "pName");
             return (Criteria) this;
         }
 
-        public Criteria andPnameNotIn(List<String> values) {
-            addCriterion("pName not in", values, "pname");
+        public Criteria andPNameNotIn(List<String> values) {
+            addCriterion("p_name not in", values, "pName");
             return (Criteria) this;
         }
 
-        public Criteria andPnameBetween(String value1, String value2) {
-            addCriterion("pName between", value1, value2, "pname");
+        public Criteria andPNameBetween(String value1, String value2) {
+            addCriterion("p_name between", value1, value2, "pName");
             return (Criteria) this;
         }
 
-        public Criteria andPnameNotBetween(String value1, String value2) {
-            addCriterion("pName not between", value1, value2, "pname");
+        public Criteria andPNameNotBetween(String value1, String value2) {
+            addCriterion("p_name not between", value1, value2, "pName");
             return (Criteria) this;
         }
 
-        public Criteria andPstateIsNull() {
-            addCriterion("pState is null");
+        public Criteria andPStateIsNull() {
+            addCriterion("p_state is null");
             return (Criteria) this;
         }
 
-        public Criteria andPstateIsNotNull() {
-            addCriterion("pState is not null");
+        public Criteria andPStateIsNotNull() {
+            addCriterion("p_state is not null");
             return (Criteria) this;
         }
 
-        public Criteria andPstateEqualTo(Integer value) {
-            addCriterion("pState =", value, "pstate");
+        public Criteria andPStateEqualTo(Integer value) {
+            addCriterion("p_state =", value, "pState");
             return (Criteria) this;
         }
 
-        public Criteria andPstateNotEqualTo(Integer value) {
-            addCriterion("pState <>", value, "pstate");
+        public Criteria andPStateNotEqualTo(Integer value) {
+            addCriterion("p_state <>", value, "pState");
             return (Criteria) this;
         }
 
-        public Criteria andPstateGreaterThan(Integer value) {
-            addCriterion("pState >", value, "pstate");
+        public Criteria andPStateGreaterThan(Integer value) {
+            addCriterion("p_state >", value, "pState");
             return (Criteria) this;
         }
 
-        public Criteria andPstateGreaterThanOrEqualTo(Integer value) {
-            addCriterion("pState >=", value, "pstate");
+        public Criteria andPStateGreaterThanOrEqualTo(Integer value) {
+            addCriterion("p_state >=", value, "pState");
             return (Criteria) this;
         }
 
-        public Criteria andPstateLessThan(Integer value) {
-            addCriterion("pState <", value, "pstate");
+        public Criteria andPStateLessThan(Integer value) {
+            addCriterion("p_state <", value, "pState");
             return (Criteria) this;
         }
 
-        public Criteria andPstateLessThanOrEqualTo(Integer value) {
-            addCriterion("pState <=", value, "pstate");
+        public Criteria andPStateLessThanOrEqualTo(Integer value) {
+            addCriterion("p_state <=", value, "pState");
             return (Criteria) this;
         }
 
-        public Criteria andPstateIn(List<Integer> values) {
-            addCriterion("pState in", values, "pstate");
+        public Criteria andPStateIn(List<Integer> values) {
+            addCriterion("p_state in", values, "pState");
             return (Criteria) this;
         }
 
-        public Criteria andPstateNotIn(List<Integer> values) {
-            addCriterion("pState not in", values, "pstate");
+        public Criteria andPStateNotIn(List<Integer> values) {
+            addCriterion("p_state not in", values, "pState");
             return (Criteria) this;
         }
 
-        public Criteria andPstateBetween(Integer value1, Integer value2) {
-            addCriterion("pState between", value1, value2, "pstate");
+        public Criteria andPStateBetween(Integer value1, Integer value2) {
+            addCriterion("p_state between", value1, value2, "pState");
             return (Criteria) this;
         }
 
-        public Criteria andPstateNotBetween(Integer value1, Integer value2) {
-            addCriterion("pState not between", value1, value2, "pstate");
+        public Criteria andPStateNotBetween(Integer value1, Integer value2) {
+            addCriterion("p_state not between", value1, value2, "pState");
             return (Criteria) this;
         }
 
-        public Criteria andPpriceIsNull() {
-            addCriterion("pPrice is null");
+        public Criteria andPPriceIsNull() {
+            addCriterion("p_price is null");
             return (Criteria) this;
         }
 
-        public Criteria andPpriceIsNotNull() {
-            addCriterion("pPrice is not null");
+        public Criteria andPPriceIsNotNull() {
+            addCriterion("p_price is not null");
             return (Criteria) this;
         }
 
-        public Criteria andPpriceEqualTo(Double value) {
-            addCriterion("pPrice =", value, "pprice");
+        public Criteria andPPriceEqualTo(Double value) {
+            addCriterion("p_price =", value, "pPrice");
             return (Criteria) this;
         }
 
-        public Criteria andPpriceNotEqualTo(Double value) {
-            addCriterion("pPrice <>", value, "pprice");
+        public Criteria andPPriceNotEqualTo(Double value) {
+            addCriterion("p_price <>", value, "pPrice");
             return (Criteria) this;
         }
 
-        public Criteria andPpriceGreaterThan(Double value) {
-            addCriterion("pPrice >", value, "pprice");
+        public Criteria andPPriceGreaterThan(Double value) {
+            addCriterion("p_price >", value, "pPrice");
             return (Criteria) this;
         }
 
-        public Criteria andPpriceGreaterThanOrEqualTo(Double value) {
-            addCriterion("pPrice >=", value, "pprice");
+        public Criteria andPPriceGreaterThanOrEqualTo(Double value) {
+            addCriterion("p_price >=", value, "pPrice");
             return (Criteria) this;
         }
 
-        public Criteria andPpriceLessThan(Double value) {
-            addCriterion("pPrice <", value, "pprice");
+        public Criteria andPPriceLessThan(Double value) {
+            addCriterion("p_price <", value, "pPrice");
             return (Criteria) this;
         }
 
-        public Criteria andPpriceLessThanOrEqualTo(Double value) {
-            addCriterion("pPrice <=", value, "pprice");
+        public Criteria andPPriceLessThanOrEqualTo(Double value) {
+            addCriterion("p_price <=", value, "pPrice");
             return (Criteria) this;
         }
 
-        public Criteria andPpriceIn(List<Double> values) {
-            addCriterion("pPrice in", values, "pprice");
+        public Criteria andPPriceIn(List<Double> values) {
+            addCriterion("p_price in", values, "pPrice");
             return (Criteria) this;
         }
 
-        public Criteria andPpriceNotIn(List<Double> values) {
-            addCriterion("pPrice not in", values, "pprice");
+        public Criteria andPPriceNotIn(List<Double> values) {
+            addCriterion("p_price not in", values, "pPrice");
             return (Criteria) this;
         }
 
-        public Criteria andPpriceBetween(Double value1, Double value2) {
-            addCriterion("pPrice between", value1, value2, "pprice");
+        public Criteria andPPriceBetween(Double value1, Double value2) {
+            addCriterion("p_price between", value1, value2, "pPrice");
             return (Criteria) this;
         }
 
-        public Criteria andPpriceNotBetween(Double value1, Double value2) {
-            addCriterion("pPrice not between", value1, value2, "pprice");
+        public Criteria andPPriceNotBetween(Double value1, Double value2) {
+            addCriterion("p_price not between", value1, value2, "pPrice");
             return (Criteria) this;
         }
 
-        public Criteria andPcountIsNull() {
-            addCriterion("pCount is null");
+        public Criteria andPCountIsNull() {
+            addCriterion("p_count is null");
             return (Criteria) this;
         }
 
-        public Criteria andPcountIsNotNull() {
-            addCriterion("pCount is not null");
+        public Criteria andPCountIsNotNull() {
+            addCriterion("p_count is not null");
             return (Criteria) this;
         }
 
-        public Criteria andPcountEqualTo(Integer value) {
-            addCriterion("pCount =", value, "pcount");
+        public Criteria andPCountEqualTo(Integer value) {
+            addCriterion("p_count =", value, "pCount");
             return (Criteria) this;
         }
 
-        public Criteria andPcountNotEqualTo(Integer value) {
-            addCriterion("pCount <>", value, "pcount");
+        public Criteria andPCountNotEqualTo(Integer value) {
+            addCriterion("p_count <>", value, "pCount");
             return (Criteria) this;
         }
 
-        public Criteria andPcountGreaterThan(Integer value) {
-            addCriterion("pCount >", value, "pcount");
+        public Criteria andPCountGreaterThan(Integer value) {
+            addCriterion("p_count >", value, "pCount");
             return (Criteria) this;
         }
 
-        public Criteria andPcountGreaterThanOrEqualTo(Integer value) {
-            addCriterion("pCount >=", value, "pcount");
+        public Criteria andPCountGreaterThanOrEqualTo(Integer value) {
+            addCriterion("p_count >=", value, "pCount");
             return (Criteria) this;
         }
 
-        public Criteria andPcountLessThan(Integer value) {
-            addCriterion("pCount <", value, "pcount");
+        public Criteria andPCountLessThan(Integer value) {
+            addCriterion("p_count <", value, "pCount");
             return (Criteria) this;
         }
 
-        public Criteria andPcountLessThanOrEqualTo(Integer value) {
-            addCriterion("pCount <=", value, "pcount");
+        public Criteria andPCountLessThanOrEqualTo(Integer value) {
+            addCriterion("p_count <=", value, "pCount");
             return (Criteria) this;
         }
 
-        public Criteria andPcountIn(List<Integer> values) {
-            addCriterion("pCount in", values, "pcount");
+        public Criteria andPCountIn(List<Integer> values) {
+            addCriterion("p_count in", values, "pCount");
             return (Criteria) this;
         }
 
-        public Criteria andPcountNotIn(List<Integer> values) {
-            addCriterion("pCount not in", values, "pcount");
+        public Criteria andPCountNotIn(List<Integer> values) {
+            addCriterion("p_count not in", values, "pCount");
             return (Criteria) this;
         }
 
-        public Criteria andPcountBetween(Integer value1, Integer value2) {
-            addCriterion("pCount between", value1, value2, "pcount");
+        public Criteria andPCountBetween(Integer value1, Integer value2) {
+            addCriterion("p_count between", value1, value2, "pCount");
             return (Criteria) this;
         }
 
-        public Criteria andPcountNotBetween(Integer value1, Integer value2) {
-            addCriterion("pCount not between", value1, value2, "pcount");
+        public Criteria andPCountNotBetween(Integer value1, Integer value2) {
+            addCriterion("p_count not between", value1, value2, "pCount");
             return (Criteria) this;
         }
 
-        public Criteria andPtotalIsNull() {
-            addCriterion("pTotal is null");
+        public Criteria andPTotalIsNull() {
+            addCriterion("p_total is null");
             return (Criteria) this;
         }
 
-        public Criteria andPtotalIsNotNull() {
-            addCriterion("pTotal is not null");
+        public Criteria andPTotalIsNotNull() {
+            addCriterion("p_total is not null");
             return (Criteria) this;
         }
 
-        public Criteria andPtotalEqualTo(Double value) {
-            addCriterion("pTotal =", value, "ptotal");
+        public Criteria andPTotalEqualTo(Double value) {
+            addCriterion("p_total =", value, "pTotal");
             return (Criteria) this;
         }
 
-        public Criteria andPtotalNotEqualTo(Double value) {
-            addCriterion("pTotal <>", value, "ptotal");
+        public Criteria andPTotalNotEqualTo(Double value) {
+            addCriterion("p_total <>", value, "pTotal");
             return (Criteria) this;
         }
 
-        public Criteria andPtotalGreaterThan(Double value) {
-            addCriterion("pTotal >", value, "ptotal");
+        public Criteria andPTotalGreaterThan(Double value) {
+            addCriterion("p_total >", value, "pTotal");
             return (Criteria) this;
         }
 
-        public Criteria andPtotalGreaterThanOrEqualTo(Double value) {
-            addCriterion("pTotal >=", value, "ptotal");
+        public Criteria andPTotalGreaterThanOrEqualTo(Double value) {
+            addCriterion("p_total >=", value, "pTotal");
             return (Criteria) this;
         }
 
-        public Criteria andPtotalLessThan(Double value) {
-            addCriterion("pTotal <", value, "ptotal");
+        public Criteria andPTotalLessThan(Double value) {
+            addCriterion("p_total <", value, "pTotal");
             return (Criteria) this;
         }
 
-        public Criteria andPtotalLessThanOrEqualTo(Double value) {
-            addCriterion("pTotal <=", value, "ptotal");
+        public Criteria andPTotalLessThanOrEqualTo(Double value) {
+            addCriterion("p_total <=", value, "pTotal");
             return (Criteria) this;
         }
 
-        public Criteria andPtotalIn(List<Double> values) {
-            addCriterion("pTotal in", values, "ptotal");
+        public Criteria andPTotalIn(List<Double> values) {
+            addCriterion("p_total in", values, "pTotal");
             return (Criteria) this;
         }
 
-        public Criteria andPtotalNotIn(List<Double> values) {
-            addCriterion("pTotal not in", values, "ptotal");
+        public Criteria andPTotalNotIn(List<Double> values) {
+            addCriterion("p_total not in", values, "pTotal");
             return (Criteria) this;
         }
 
-        public Criteria andPtotalBetween(Double value1, Double value2) {
-            addCriterion("pTotal between", value1, value2, "ptotal");
+        public Criteria andPTotalBetween(Double value1, Double value2) {
+            addCriterion("p_total between", value1, value2, "pTotal");
             return (Criteria) this;
         }
 
-        public Criteria andPtotalNotBetween(Double value1, Double value2) {
-            addCriterion("pTotal not between", value1, value2, "ptotal");
+        public Criteria andPTotalNotBetween(Double value1, Double value2) {
+            addCriterion("p_total not between", value1, value2, "pTotal");
             return (Criteria) this;
         }
     }

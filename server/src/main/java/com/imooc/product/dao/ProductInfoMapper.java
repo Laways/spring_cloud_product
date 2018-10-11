@@ -10,7 +10,7 @@ public interface ProductInfoMapper {
 
     int deleteByExample(ProductInfoExample example);
 
-    int deleteByPrimaryKey(Integer pid);
+    int deleteByPrimaryKey(Integer pId);
 
     int insert(ProductInfo record);
 
@@ -18,7 +18,7 @@ public interface ProductInfoMapper {
 
     List<ProductInfo> selectByExample(ProductInfoExample example);
 
-    ProductInfo selectByPrimaryKey(Integer pid);
+    ProductInfo selectByPrimaryKey(Integer pId);
 
     int updateByExampleSelective(@Param("record") ProductInfo record, @Param("example") ProductInfoExample example);
 

@@ -2,12 +2,12 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.imooc.product.dao.ProductInfoMapper" >
   <resultMap id="BaseResultMap" type="com.imooc.product.entity.ProductInfo" >
-    <id column="pId" property="pid" jdbcType="INTEGER" />
-    <result column="pName" property="pname" jdbcType="VARCHAR" />
-    <result column="pState" property="pstate" jdbcType="INTEGER" />
-    <result column="pPrice" property="pprice" jdbcType="DOUBLE" />
-    <result column="pCount" property="pcount" jdbcType="INTEGER" />
-    <result column="pTotal" property="ptotal" jdbcType="DOUBLE" />
+    <id column="p_id" property="pId" jdbcType="INTEGER" />
+    <result column="p_name" property="pName" jdbcType="VARCHAR" />
+    <result column="p_state" property="pState" jdbcType="INTEGER" />
+    <result column="p_price" property="pPrice" jdbcType="DOUBLE" />
+    <result column="p_count" property="pCount" jdbcType="INTEGER" />
+    <result column="p_total" property="pTotal" jdbcType="DOUBLE" />
   </resultMap>
   <sql id="Example_Where_Clause" >
     <where >
@@ -68,7 +68,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List" >
-    pId, pName, pState, pPrice, pCount, pTotal
+    p_id, p_name, p_state, p_price, p_count, p_total
   </sql>
   <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.imooc.product.entity.ProductInfoExample" >
     select
@@ -76,7 +76,7 @@
       distinct
     </if>
     <include refid="Base_Column_List" />
-    from productInfo
+    from product_info
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
     </if>
@@ -87,96 +87,96 @@
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select 
     <include refid="Base_Column_List" />
-    from productInfo
-    where pId = #{pid,jdbcType=INTEGER}
+    from product_info
+    where p_id = #{pId,jdbcType=INTEGER}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
-    delete from productInfo
-    where pId = #{pid,jdbcType=INTEGER}
+    delete from product_info
+    where p_id = #{pId,jdbcType=INTEGER}
   </delete>
   <delete id="deleteByExample" parameterType="com.imooc.product.entity.ProductInfoExample" >
-    delete from productInfo
+    delete from product_info
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
   <insert id="insert" parameterType="com.imooc.product.entity.ProductInfo" >
-    insert into productInfo (pId, pName, pState, 
-      pPrice, pCount, pTotal
+    insert into product_info (p_id, p_name, p_state, 
+      p_price, p_count, p_total
       )
-    values (#{pid,jdbcType=INTEGER}, #{pname,jdbcType=VARCHAR}, #{pstate,jdbcType=INTEGER}, 
-      #{pprice,jdbcType=DOUBLE}, #{pcount,jdbcType=INTEGER}, #{ptotal,jdbcType=DOUBLE}
+    values (#{pId,jdbcType=INTEGER}, #{pName,jdbcType=VARCHAR}, #{pState,jdbcType=INTEGER}, 
+      #{pPrice,jdbcType=DOUBLE}, #{pCount,jdbcType=INTEGER}, #{pTotal,jdbcType=DOUBLE}
       )
   </insert>
   <insert id="insertSelective" parameterType="com.imooc.product.entity.ProductInfo" >
-    insert into productInfo
+    insert into product_info
     <trim prefix="(" suffix=")" suffixOverrides="," >
-      <if test="pid != null" >
-        pId,
+      <if test="pId != null" >
+        p_id,
       </if>
-      <if test="pname != null" >
-        pName,
+      <if test="pName != null" >
+        p_name,
       </if>
-      <if test="pstate != null" >
-        pState,
+      <if test="pState != null" >
+        p_state,
       </if>
-      <if test="pprice != null" >
-        pPrice,
+      <if test="pPrice != null" >
+        p_price,
       </if>
-      <if test="pcount != null" >
-        pCount,
+      <if test="pCount != null" >
+        p_count,
       </if>
-      <if test="ptotal != null" >
-        pTotal,
+      <if test="pTotal != null" >
+        p_total,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides="," >
-      <if test="pid != null" >
-        #{pid,jdbcType=INTEGER},
+      <if test="pId != null" >
+        #{pId,jdbcType=INTEGER},
       </if>
-      <if test="pname != null" >
-        #{pname,jdbcType=VARCHAR},
+      <if test="pName != null" >
+        #{pName,jdbcType=VARCHAR},
       </if>
-      <if test="pstate != null" >
-        #{pstate,jdbcType=INTEGER},
+      <if test="pState != null" >
+        #{pState,jdbcType=INTEGER},
       </if>
-      <if test="pprice != null" >
-        #{pprice,jdbcType=DOUBLE},
+      <if test="pPrice != null" >
+        #{pPrice,jdbcType=DOUBLE},
       </if>
-      <if test="pcount != null" >
-        #{pcount,jdbcType=INTEGER},
+      <if test="pCount != null" >
+        #{pCount,jdbcType=INTEGER},
       </if>
-      <if test="ptotal != null" >
-        #{ptotal,jdbcType=DOUBLE},
+      <if test="pTotal != null" >
+        #{pTotal,jdbcType=DOUBLE},
       </if>
     </trim>
   </insert>
   <select id="countByExample" parameterType="com.imooc.product.entity.ProductInfoExample" resultType="java.lang.Integer" >
-    select count(*) from productInfo
+    select count(*) from product_info
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
     </if>
   </select>
   <update id="updateByExampleSelective" parameterType="map" >
-    update productInfo
+    update product_info
     <set >
-      <if test="record.pid != null" >
-        pId = #{record.pid,jdbcType=INTEGER},
+      <if test="record.pId != null" >
+        p_id = #{record.pId,jdbcType=INTEGER},
       </if>
-      <if test="record.pname != null" >
-        pName = #{record.pname,jdbcType=VARCHAR},
+      <if test="record.pName != null" >
+        p_name = #{record.pName,jdbcType=VARCHAR},
       </if>
-      <if test="record.pstate != null" >
-        pState = #{record.pstate,jdbcType=INTEGER},
+      <if test="record.pState != null" >
+        p_state = #{record.pState,jdbcType=INTEGER},
       </if>
-      <if test="record.pprice != null" >
-        pPrice = #{record.pprice,jdbcType=DOUBLE},
+      <if test="record.pPrice != null" >
+        p_price = #{record.pPrice,jdbcType=DOUBLE},
       </if>
-      <if test="record.pcount != null" >
-        pCount = #{record.pcount,jdbcType=INTEGER},
+      <if test="record.pCount != null" >
+        p_count = #{record.pCount,jdbcType=INTEGER},
       </if>
-      <if test="record.ptotal != null" >
-        pTotal = #{record.ptotal,jdbcType=DOUBLE},
+      <if test="record.pTotal != null" >
+        p_total = #{record.pTotal,jdbcType=DOUBLE},
       </if>
     </set>
     <if test="_parameter != null" >
@@ -184,45 +184,45 @@
     </if>
   </update>
   <update id="updateByExample" parameterType="map" >
-    update productInfo
-    set pId = #{record.pid,jdbcType=INTEGER},
-      pName = #{record.pname,jdbcType=VARCHAR},
-      pState = #{record.pstate,jdbcType=INTEGER},
-      pPrice = #{record.pprice,jdbcType=DOUBLE},
-      pCount = #{record.pcount,jdbcType=INTEGER},
-      pTotal = #{record.ptotal,jdbcType=DOUBLE}
+    update product_info
+    set p_id = #{record.pId,jdbcType=INTEGER},
+      p_name = #{record.pName,jdbcType=VARCHAR},
+      p_state = #{record.pState,jdbcType=INTEGER},
+      p_price = #{record.pPrice,jdbcType=DOUBLE},
+      p_count = #{record.pCount,jdbcType=INTEGER},
+      p_total = #{record.pTotal,jdbcType=DOUBLE}
     <if test="_parameter != null" >
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
   <update id="updateByPrimaryKeySelective" parameterType="com.imooc.product.entity.ProductInfo" >
-    update productInfo
+    update product_info
     <set >
-      <if test="pname != null" >
-        pName = #{pname,jdbcType=VARCHAR},
+      <if test="pName != null" >
+        p_name = #{pName,jdbcType=VARCHAR},
       </if>
-      <if test="pstate != null" >
-        pState = #{pstate,jdbcType=INTEGER},
+      <if test="pState != null" >
+        p_state = #{pState,jdbcType=INTEGER},
       </if>
-      <if test="pprice != null" >
-        pPrice = #{pprice,jdbcType=DOUBLE},
+      <if test="pPrice != null" >
+        p_price = #{pPrice,jdbcType=DOUBLE},
       </if>
-      <if test="pcount != null" >
-        pCount = #{pcount,jdbcType=INTEGER},
+      <if test="pCount != null" >
+        p_count = #{pCount,jdbcType=INTEGER},
       </if>
-      <if test="ptotal != null" >
-        pTotal = #{ptotal,jdbcType=DOUBLE},
+      <if test="pTotal != null" >
+        p_total = #{pTotal,jdbcType=DOUBLE},
       </if>
     </set>
-    where pId = #{pid,jdbcType=INTEGER}
+    where p_id = #{pId,jdbcType=INTEGER}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.imooc.product.entity.ProductInfo" >
-    update productInfo
-    set pName = #{pname,jdbcType=VARCHAR},
-      pState = #{pstate,jdbcType=INTEGER},
-      pPrice = #{pprice,jdbcType=DOUBLE},
-      pCount = #{pcount,jdbcType=INTEGER},
-      pTotal = #{ptotal,jdbcType=DOUBLE}
-    where pId = #{pid,jdbcType=INTEGER}
+    update product_info
+    set p_name = #{pName,jdbcType=VARCHAR},
+      p_state = #{pState,jdbcType=INTEGER},
+      p_price = #{pPrice,jdbcType=DOUBLE},
+      p_count = #{pCount,jdbcType=INTEGER},
+      p_total = #{pTotal,jdbcType=DOUBLE}
+    where p_id = #{pId,jdbcType=INTEGER}
   </update>
 </mapper>

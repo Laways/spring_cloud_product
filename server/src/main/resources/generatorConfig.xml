@@ -35,7 +35,8 @@
                <!--enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">-->
         <!--</table>-->
         <table tableName="product_info" domainObjectName="ProductInfo">
-
+            <!--true为直接使用数据库里的列名称-->
+            <property name="useActualColumnNames" value="false"/>
         </table>
     </context>
 </generatorConfiguration>
